@@ -29,15 +29,17 @@
 	- Te-6: 785
 
 # Model Training:
+
 ```
 cd autogluon/examples/automm/Conv-LoRA/
 ```
-## Train each class (1, 2, 3)
-	```
-	python run_semantic_segmentation.py --task gan-generated --dataset_dir ./sam-gan/datasets --output_dir ./sam-gan/output/output_class1 --ckpt_path AutogluonModels --data_name train_class1 --num_gpus 3 --batch_size 4 --rank 2
-	```
 
-	##args:
+## Train each class (1, 2, 3)
+```
+python run_semantic_segmentation.py --task gan-generated --dataset_dir ./sam-gan/datasets --output_dir ./sam-gan/output/output_class1 --ckpt_path AutogluonModels --data_name train_class1 --num_gpus 3 --batch_size 4 --rank 2
+```
+
+	## args:
 		- task : gan-generated
 		- dataset_dir: main directory of dataset and the location of the .csv data list 
 		- output_dir: output directory
