@@ -18,7 +18,7 @@
 	- for training: we preprocess each file into seperate class and hence train 3 models for 3 seperate class
 	- for test: we use the pretrained model for the corresponding class
 
-#Dataset Size:
+# Dataset Size:
 	- Tr1: 5724
 	- Tr2: 1142
 	- Te-1: 920
@@ -28,8 +28,10 @@
 	- Te-5: 600
 	- Te-6: 785
 
-#Run code:
-# cd autogluon/examples/automm/Conv-LoRA/
+# Model Training:
+```
+cd autogluon/examples/automm/Conv-LoRA/
+```
 ## Train each class (1, 2, 3)
 	```
 	python run_semantic_segmentation.py --task gan-generated --dataset_dir ./sam-gan/datasets --output_dir ./sam-gan/output/output_class1 --ckpt_path AutogluonModels --data_name train_class1 --num_gpus 3 --batch_size 4 --rank 2
