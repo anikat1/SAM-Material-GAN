@@ -1,16 +1,17 @@
-#We modify the code originally created by: https://github.com/autogluon/autogluon/tree/master/examples/automm/Conv-LoRA
+## We modify the code originally created by: https://github.com/autogluon/autogluon/tree/master/examples/automm/Conv-LoRA
 
-#Conv-Lora git repo and install environments: 
+# Conv-Lora git repo and install environments: 
 	- https://github.com/autogluon/autogluon/tree/master/examples/automm/Conv-LoRA
 	- follow the instructions in the above repository to install the necessary libraries and the environment
-	```
+	
+ ```
 	conda create -n conv-lora python=3.10
   	conda activate conv-lora
   	pip install -U pip
   	pip install -U setuptools wheel
   	git clone https://github.com/autogluon/autogluon
   	cd autogluon && pip install -e multimodal/[tests]
-	```
+```
 	- Copy following python scripts to autogluon/examples/automm/Conv-LoRA/: 
 		- preprocess-scripts/* 
 		- run_segmentation.py 
