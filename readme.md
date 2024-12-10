@@ -56,15 +56,15 @@ python run_semantic_segmentation.py --task gan-generated --dataset_dir ./sam-gan
 		-- data_name: 
 
 ## class 1 (test1-test6)
-	```
-	python run_semantic_segmentation.py --task gan-generated --dataset_dir ./sam-gan/datasets --output_dir ./sam-gan/class1/test1 --ckpt_path AutogluonModels/ag-20240826_214753 --data_name test1_class1 --num_gpus 3 --batch_size 4 --rank 2 --eval
-	```
+```
+python run_semantic_segmentation.py --task gan-generated --dataset_dir ./sam-gan/datasets --output_dir ./sam-gan/class1/test1 --ckpt_path AutogluonModels/ag-20240826_214753 --data_name test1_class1 --num_gpus 3 --batch_size 4 --rank 2 --eval
+```
 
 
 ## class 2 (test1-test6)
-	```
+```
 	python run_semantic_segmentation.py --task gan-generated --dataset_dir ./sam-gan/datasets --output_dir ./sam-gan/class2/test1 --ckpt_path AutogluonModels/ag-20240828_143435/epoch=13-step=24038.ckpt --data_name test1_class2 --num_gpus 3 --batch_size 4 --rank 2 --eval
-	```
+```
 
 ## class 3 (test1-test6)
 ```
